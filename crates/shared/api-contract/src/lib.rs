@@ -9,3 +9,8 @@ pub struct DessertDto {
     pub description: String,
     pub image_key: String,
 }
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct DessertsResponse {
+    pub items: Vec<DessertDto>,
+}
